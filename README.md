@@ -10,6 +10,15 @@ npm run dev
 yarn dev
 ```
 
+## Pre-reqs
+
+```bash
+yarn add --dev prettier
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+yarn add web3uikit moralis react-moralis
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.

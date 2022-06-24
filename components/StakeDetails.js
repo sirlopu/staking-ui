@@ -28,15 +28,12 @@ export default function StakeDetails() {
 
     async function updateUiValues() {
         const rtBalanceFromContract = (
-            await getRtBalance({ onError: (error) => console.log(error) })
-            ).toString()
-        const formattedRtBalanceFromContract = ethers.utils.formatUnits(
-            rtBalanceFromContract, "ether"
-            )
+            await getRtBalance({ onError: (error) => console.log(error) })).toString()
+        
+        const formattedRtBalanceFromContract = ethers.utils.formatUnits(rtBalanceFromContract, "ether")
         setRtBalance(formattedRtBalanceFromContract)
     }
 
-    console.log(account)
     // reward token address
     // reward token ABI
     return(<div>RT Balance is: {rtBalance}</div>)
